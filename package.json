@@ -1,0 +1,25 @@
+{
+  "name": "element-face-matching-sdk",
+  "version": "1.0.1",
+  "description": "Cordova Android Plugin for Element Face Matching",
+  "cordova": {
+    "id": "cordova-element-face-matching-sdk",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Element1/cordova-element-face-matching-sdk.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Element",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Element1/cordova-element-face-matching-sdk/issues"
+  },
+  "homepage": "https://github.com/Element1/cordova-element-face-matching-sdk#readme"
+}

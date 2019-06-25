@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    id="element-face-matching-sdk" 
+    version="1.0.3">
+    <name>Element</name>
+    <description>Cordova Android Plugin for Element Face Matching</description>
+
+    <js-module src="www/element.js" name="device">
+        <clobbers target="element" />
+    </js-module>
+    
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ElementFaceMatchingSDK">
+                <param name="android-package" value="com.element.plugin.ElementFaceMatchingSDK"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:name="com.element.camera.ElementCordovaFaceCaptureActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        </config-file>
+        
+        <source-file src="src/android/ElementCordovaFaceCaptureActivity.java" target-dir="src/com/element/camera" />
+        <source-file src="src/android/ElementFaceMatchingSDK.java" target-dir="src/com/element/plugin" />
+        <source-file src="src/android/FaceMatchingTask.java" target-dir="src/com/element/plugin" />
+        <resource-file src="src/android/element-fm-sdk-v1.1.9.aar" target="libs/element-fm-sdk-v1.1.9.aar" />
+
+        <framework src="com.android.support:appcompat-v7:26.1.0" />
+        <framework src="com.amazonaws:aws-android-sdk-core:2.6.+" />
+        <framework src="com.amazonaws:aws-android-sdk-s3:2.6.+" />
+        <framework src="com.google.android.gms:play-services-location:+" />
+        <framework src="com.google.guava:guava:23.5-android" />
+        <framework src="com.squareup.okhttp3:okhttp:3.11.0" />
+
+    </platform>
+    
+</plugin>
