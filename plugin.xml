@@ -39,6 +39,7 @@
         <framework src="com.google.android.gms:play-services-location:+" />
         <framework src="com.google.guava:guava:23.5-android" />
         <framework src="com.squareup.okhttp3:okhttp:3.11.0" />
+        <framework src="src/android/element.gradle" custom="true" type="gradleReference" />
 
     </platform>
     
