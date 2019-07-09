@@ -8,8 +8,8 @@ import android.util.Base64;
 
 import com.element.camera.Capture;
 import com.element.camera.ElementSDK;
-import com.element.facematchdemo.BuildConfig;
-import com.element.facematchdemo.R;
+//import com.element.facematchdemo.BuildConfig;
+//import com.element.facematchdemo.R;
 import com.google.gson.Gson;
 
 import java.util.TimeZone;
@@ -34,7 +34,7 @@ public class FaceMatchingTask extends AsyncTask<Object, Void, Void> {
         this.builder = new Request.Builder().url("https://id-fm.discoverelement.com:9443/api/faceMatching");
 
         builder.addHeader("apiKey", "Gj0QTn4Pr6VtVSr143EREibIfv2goqOVaybj5dlr8SRTVZEYgnNpXRX2tGWp627f@id-fm");
-        builder.addHeader("appVersion", BuildConfig.VERSION_NAME);
+        builder.addHeader("appVersion", "1.0");
         builder.addHeader("os", "ANDROID");
         builder.addHeader("appId", context.getPackageName());
         builder.addHeader("deviceModel", Build.MODEL);
