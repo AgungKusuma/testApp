@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
-    id="element-face-matching-sdk" 
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="element-face-matching-sdk"
     version="1.0.3">
     <name>Element</name>
     <description>Cordova Android Plugin for Element Face Matching</description>
@@ -8,11 +8,11 @@
     <js-module src="www/element.js" name="device">
         <clobbers target="element" />
     </js-module>
-    
+
     <platform name="android">
         <!--<hook type="after_prepare" src="scripts/apply-to-gradle.properties.js" />-->
         <!--<hook type="after_prepare" src="scripts/apply.js" />-->
-        
+
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="ElementFaceMatchingSDK">
                 <param name="android-package" value="com.element.plugin.ElementFaceMatchingSDK"/>
@@ -29,14 +29,14 @@
             <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
             <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
         </config-file>
-        
+
         <source-file src="src/android/ElementCordovaFaceCaptureActivity.java" target-dir="src/com/element/camera" />
         <source-file src="src/android/ElementFaceMatchingSDK.java" target-dir="src/com/element/plugin" />
         <source-file src="src/android/FaceMatchingTask.java" target-dir="src/com/element/plugin" />
         <resource-file src="src/android/element-fm-sdk-v1.1.9.aar" target="libs/element-fm-sdk-v1.1.9.aar" />
         <resource-file src="src/android/element.eak" target="resources/element.eak" />
 
-        <framework src="com.android.support:appcompat-v7:26.1.0" />
+        <framework src="com.android.support:appcompat-v7:26.0.0-alpha" />
         <!--<framework src="com.android.support:appcompat-v7:28.0.0" />-->
         <framework src="com.amazonaws:aws-android-sdk-core:2.6.+" />
         <framework src="com.amazonaws:aws-android-sdk-s3:2.6.+" />
@@ -46,5 +46,5 @@
         <framework src="src/android/element.gradle" custom="true" type="gradleReference" />
 
     </platform>
-    
+
 </plugin>
