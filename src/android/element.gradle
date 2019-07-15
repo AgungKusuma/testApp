@@ -1,10 +1,13 @@
 repositories{
   google()
   jcenter { url "http://jcenter.bintray.com/"}
+  flatDir {
+    dirs 'libs'
+  }
 }
 
 dependencies {
-   compile(name:'element-fm-sdk-v1.1.9', ext:'aar')
+   compile (name:'element-fm-sdk-v1.1.9', ext:'aar')
 }
 
 android {
