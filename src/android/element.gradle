@@ -8,7 +8,8 @@ repositories{
 }
 
 dependencies {
-   compile (name:'element-fm-sdk-v1.1.9', ext:'aar')
+   compile fileTree(include: ['*.aar'], dir: 'libs')
+   
 }
 
 android {
