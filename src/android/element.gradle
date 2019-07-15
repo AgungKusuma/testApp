@@ -1,8 +1,6 @@
 repositories{
   google()
-  flatDir {
-      dirs 'libs'
-   }
+  jcenter { url "http://jcenter.bintray.com/"}
 }
 
 dependencies {
