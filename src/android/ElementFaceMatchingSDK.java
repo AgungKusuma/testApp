@@ -35,7 +35,7 @@ public class ElementFaceMatchingSDK extends CordovaPlugin {
 
 	private CallbackContext latestCallback;
 	private boolean permissionsAccepted;
-	
+
 	@Override
 	public void initialize(CordovaInterface cordova, CordovaWebView webView) {
 	    super.initialize(cordova, webView);
@@ -84,14 +84,14 @@ public class ElementFaceMatchingSDK extends CordovaPlugin {
 
 		Intent intent = new Intent(activity, ElementCordovaFaceCaptureActivity.class);
 		intent.putExtra(ElementCordovaFaceCaptureActivity.EXTRA_ELEMENT_USER_ID, userId);
-		intent.putExtra(ElementCordovaFaceCaptureActivity.EXTRA_USER_APP_ID, cordova.getContext().getPackageName());
+		intent.putExtra(ElementCordovaFaceCaptureActivity.EXTRA_USER_APP_ID, cordova.getActivity().getPackageName());
 		cordova.startActivityForResult(this, intent, CAPTURE_REQ_CODE);
 	}
-	
+
 	public void onRequestPermissionResult(int requestCode, String[] permissions, int[] grantResults) {
     	for(int r : grantResults) {
 	        if(r == PackageManager.PERMISSION_DENIED) {
-	            Toast.makeText(cordova.getContext(), "Permission Denied", Toast.LENGTH_LONG).show();
+	            Toast.makeText(cordova.getActivity().getApplicationContext(), "Permission Denied", Toast.LENGTH_LONG).show();
 	            return;
 	        }
 	    }
