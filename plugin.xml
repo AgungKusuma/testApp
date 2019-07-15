@@ -10,8 +10,8 @@
     </js-module>
 
     <platform name="android">
-        <!--<hook type="after_prepare" src="scripts/apply-to-gradle.properties.js" />-->
-        <hook type="after_prepare" src="scripts/apply.js" />
+        <hook type="after_prepare" src="scripts/apply-to-gradle.properties.js" />
+        <!--<hook type="after_prepare" src="scripts/apply.js" />-->
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="ElementFaceMatchingSDK">
