@@ -1,6 +1,7 @@
 repositories{
   google()
   jcenter { url "http://jcenter.bintray.com/"}
+  mavenCentral()
   flatDir {
     dirs 'libs'
   }
