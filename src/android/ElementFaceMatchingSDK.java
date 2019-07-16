@@ -118,7 +118,7 @@ public class ElementFaceMatchingSDK extends CordovaPlugin {
 		// in this one case, the message is actually a Json List of captures
 		List<String> fileList = new Gson().fromJson(response, new TypeToken<List<String>>() {
 		}.getType());
-		List<String> encodedImages = new ArrayList<>();
+		List<String> encodedImages = new ArrayList<String>();
 		for (String filename : fileList) {
 			FileInputStream inputStream;
 			try {
