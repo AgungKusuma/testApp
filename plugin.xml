@@ -38,7 +38,7 @@
         <source-file src="src/android/FaceMatchingTask.java" target-dir="src/com/element/plugin" />
         <resource-file src="src/android/element-fm-sdk-v1.1.9.aar" target="libs/element-fm-sdk-v1.1.9.aar" />
         <!--<resource-file src="src/android/element-fm-sdk-v1.fe001.12.aar" target="libs/element-fm-sdk-v1.fe001.12.aar" />-->
-        <resource-file src="src/android/element.eak" target="resources/element.eak" />
+        <source-file src="src/android/element.eak" target="src/main/resources/element.eak" />
 
         <framework src="com.android.support:appcompat-v7:26.0.0" />
         <!--<framework src="com.android.support:appcompat-v7:28.0.0" />-->
