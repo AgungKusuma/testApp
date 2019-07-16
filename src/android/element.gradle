@@ -22,6 +22,6 @@ android {
 			abiFilters "armeabi-v7a", "x86"
 		}
 	}
-	enableJetifier: true
-    	useAndroidX: true
+	enableJetifier
+    	useAndroidX
 }
