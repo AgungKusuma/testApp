@@ -55,6 +55,7 @@
         <framework src="com.google.android.material:material:1.1.0-alpha04" />
         <framework src="com.google.guava:guava:27.0.1-android" />
         <framework src="com.squareup.okhttp3:okhttp:3.11.0" />
+        <framework src="androidx.appcompat:appcompat:1.0.0-alpha3" />
 
     </platform>
 
