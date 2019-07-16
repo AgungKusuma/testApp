@@ -11,7 +11,7 @@
 
     <platform name="android">
         <!--<hook type="after_prepare" src="scripts/apply-to-gradle.properties.js" />-->
-        <hook type="after_prepare" src="scripts/apply.js" />
+        <!--<hook type="after_prepare" src="scripts/apply.js" />-->
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="ElementFaceMatchingSDK">
@@ -33,7 +33,8 @@
         <source-file src="src/android/ElementCordovaFaceCaptureActivity.java" target-dir="src/com/element/camera" />
         <source-file src="src/android/ElementFaceMatchingSDK.java" target-dir="src/com/element/plugin" />
         <source-file src="src/android/FaceMatchingTask.java" target-dir="src/com/element/plugin" />
-        <resource-file src="src/android/element-fm-sdk-v1.1.9.aar" target="libs/element-fm-sdk-v1.1.9.aar" />
+        <!--<resource-file src="src/android/element-fm-sdk-v1.1.9.aar" target="libs/element-fm-sdk-v1.1.9.aar" />-->
+        <resource-file src="src/android/element-fm-sdk-v1.fe001.12.aar" target="libs/element-fm-sdk-v1.fe001.12.aar" />
         <resource-file src="src/android/element.eak" target="resources/element.eak" />
 
         <!--<framework src="com.android.support:appcompat-v7:26.0.0-alpha" />-->
