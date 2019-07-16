@@ -85,7 +85,7 @@ public class ElementCordovaFaceCaptureActivity extends ElementFaceCaptureActivit
 		public void onResult(Response response) throws Exception {
 			if (response.code() == HttpURLConnection.HTTP_OK) {
 				FaceMatchingTask.FmResponse fmResponse = new Gson().fromJson(response.body().string(), FaceMatchingTask.FmResponse.class);
-				setResult(true, fmResponse.displayMessage);
+				setResult(true, new Gson().toJson(fmResponse));
 			} else {
 				FaceMatchingTask.ServerMessage serverMessage = new Gson().fromJson(response.body().string(), FaceMatchingTask.ServerMessage.class);
 				setResult(false, serverMessage.message);

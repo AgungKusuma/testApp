@@ -105,6 +105,7 @@ public class FaceMatchingTask extends AsyncTask<Object, Void, Void> {
 
     public static class FmResponse {
         public String displayMessage;
+        public double confidenceScore;
     }
 
     public static class ServerMessage {
