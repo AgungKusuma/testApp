@@ -50,7 +50,7 @@ public class ElementCordovaFaceCaptureActivity extends ElementFaceCaptureActivit
 	}
 
 	private void handleDirectJsCallback(Capture[] captures) {
-		ArrayList<String> list = new ArrayList<>();
+		ArrayList<String> list = new ArrayList<String>();
 		for (Capture capture : captures) {
 			byte[] imageBytes = capture.data;
 			String filename = capture.tag;
