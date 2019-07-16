@@ -1,6 +1,4 @@
 repositories{
-  google()
-  maven { url "https://maven.google.com" }	
   jcenter { url "http://jcenter.bintray.com/"}
   flatDir {
     dirs 'libs'
@@ -19,7 +17,7 @@ android {
 	}
 	defaultConfig {
 		ndk {
-			abiFilters "armeabi-v7a"
+			abiFilters "armeabi-v7a", "x86"
 		}
 	}
 }
