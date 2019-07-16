@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="element-face-matching-sdk"
+    id="id.co.ifabula.testappcordova"
     version="1.0.3">
+    <!--id="element-face-matching-sdk"-->
     <name>Element</name>
     <description>Cordova Android Plugin for Element Face Matching</description>
 
