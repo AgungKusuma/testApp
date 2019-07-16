@@ -18,6 +18,8 @@
                 <param name="android-package" value="com.element.plugin.ElementFaceMatchingSDK"/>
                 <param name="onload" value="true" />
             </feature>
+            <preference name="android-minSdkVersion" value="21" />
+            <preference name="android-targetSdkVersion" value="28" />
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
