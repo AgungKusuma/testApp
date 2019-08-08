@@ -31,9 +31,9 @@ public class FaceMatchingTask extends AsyncTask<Object, Void, Void> {
     public FaceMatchingTask(FaceMatchingTaskCallback faceMatchingTaskCallback) {
         Context context = faceMatchingTaskCallback.getContext();
         this.faceMatchingTaskCallback = faceMatchingTaskCallback;
-        this.builder = new Request.Builder().url("https://id-fm.discoverelement.com:9443/api/faceMatching");
+        this.builder = new Request.Builder().url("https://10.20.214.58:9443/api/faceMatching");
 
-        builder.addHeader("apiKey", "Gj0QTn4Pr6VtVSr143EREibIfv2goqOVaybj5dlr8SRTVZEYgnNpXRX2tGWp627f@id-fm");
+        builder.addHeader("apiKey", "ISlhCOVBPpZYhStiCXJOJ7XdnTsAMPDsFYhmPCkyooTtclCL91gE6fzWZiwHSoSU@id-fm");
         builder.addHeader("appVersion", "1.0");
         builder.addHeader("os", "ANDROID");
         builder.addHeader("appId", context.getPackageName());
