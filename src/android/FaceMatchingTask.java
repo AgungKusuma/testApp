@@ -31,7 +31,7 @@ public class FaceMatchingTask extends AsyncTask<Object, Void, Void> {
     public FaceMatchingTask(FaceMatchingTaskCallback faceMatchingTaskCallback) {
         Context context = faceMatchingTaskCallback.getContext();
         this.faceMatchingTaskCallback = faceMatchingTaskCallback;
-        this.builder = new Request.Builder().url("https://10.20.214.58:9443/api/faceMatching");
+        this.builder = new Request.Builder().url("http://10.20.214.58:9443/api/faceMatching");
 
         builder.addHeader("apiKey", "ISlhCOVBPpZYhStiCXJOJ7XdnTsAMPDsFYhmPCkyooTtclCL91gE6fzWZiwHSoSU@id-fm");
         builder.addHeader("appVersion", "1.0");
